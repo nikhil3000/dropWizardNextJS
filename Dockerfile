@@ -1,10 +1,10 @@
-FROM alpine/git as clone
+FROM alpine/git as clone2
 WORKDIR /app
-RUN git clone https://github.com/nikhil3000/dropWizardNextJS
+RUN git clone https://github.com/nikhil3000/dropWizardNextJS dropWizardNextJS
 
 FROM maven:3.5-jdk-8-alpine as dropwizard
 WORKDIR /app/dropWizardTutorial
-COPY --from=clone /app/dropWizardNextJS/dropWizardTutorial /app/dropWizardTutorial
+COPY --from=clone2 /app/dropWizardNextJS/dropWizardTutorial /app/dropWizardTutorial
 RUN ls /app/dropWizardTutorial
 RUN mvn package
 EXPOSE 8080
