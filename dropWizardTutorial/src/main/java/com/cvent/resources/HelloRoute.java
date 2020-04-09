@@ -58,3 +58,5 @@ public class HelloRoute {
         return str;
     }
 }
+
+psql\--host=mydatabase.cqiaxmoyftpg.us-east-2. rds.amazonaws.com\--port=5432\--username=postgres\--password\--dbname=mydatabase

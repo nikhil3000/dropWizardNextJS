@@ -11,13 +11,14 @@ database:
   driverClass: org.postgresql.Driver
 
   # the username
-  user: dropwizarduser
+  user: postgres
 
   # the password
-  password: iAMs00perSecrEET
+  password: inFopmiVQyOQcvFN2EOK
 
   # the JDBC URL
-  url: jdbc:postgresql://[::1]:5432/dropwizarddb
+  # url: postgres://irxczshz:remEcSIbwMzpS5-kaMR6dsYfIxWUySGt@drona.db.elephantsql.com:5432/irxczshz
+  url: jdbc:postgresql://mydatabase.cqiaxmoyftpg.us-east-2.rds.amazonaws.com:5432/nikhildb
 
   # any properties specific to your JDBC driver:
   properties:
